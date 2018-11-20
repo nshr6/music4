@@ -4,7 +4,7 @@ const ytdl = require('ytdl-core');
 const opus = require("node-opus");
 const gyp = require("node-gyp");
 const fs = require('fs')
-const prefix = '1'
+const prefix = '4'
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const youtube = new YouTube('AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8');
@@ -13,9 +13,9 @@ client.on('warn', console.warn);
 client.on('error', console.error);
 client.on('ready', () => { console.log(`${client.user.tag} Yo this ready!`)
 client.user.setStatus("idle")
-client.user.setActivity("1play", {type : 'Listening'});
+client.user.setActivity("4play", {type : 'Listening'});
  setInterval(() => {
-var channel = client.channels.get("514415401233285135");
+var channel = client.channels.get("514416183751999491");
 channel.join();
 }, 3000);
 });
